@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Test: no test specified\" && exit 0",
+    "deploy": "node_modules/.bin/firebase deploy --token $FIREBASE_TOKEN"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,8 @@
     "http-errors": "^1.6.3",
     "jade": "^1.11.0",
     "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^3.18.1"
   }
 }
