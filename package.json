@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/www",
+    "serve": "node_modules/.bin/firebase serve -p 9000 -o 0.0.0.0",
     "test": "echo \"Test: no test specified\" && exit 0",
     "deploy": "node_modules/.bin/firebase deploy --token $FIREBASE_TOKEN"
   },
