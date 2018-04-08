@@ -4,21 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www",
     "serve": "node_modules/.bin/firebase serve -p 9000 -o 0.0.0.0",
     "test": "echo \"Test: no test specified\" && exit 0",
     "deploy": "node_modules/.bin/firebase deploy --token $FIREBASE_TOKEN"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/annkaniga/gang500.ml.git"
+    "url": "git+https://github.com/gang500ml/gang500.ml.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Gang 500ml",
+  "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/annkaniga/gang500.ml/issues"
+    "url": "https://github.com/gang500ml/gang500.ml.git/issues"
   },
-  "homepage": "https://github.com/annkaniga/gang500.ml#readme",
+  "homepage": "https://github.com/gang500ml/gang500.ml.git#readme",
   "dependencies": {
     "cookie-parser": "^1.4.3",
     "debug": "^3.1.0",
@@ -28,6 +27,6 @@
     "morgan": "^1.9.0"
   },
   "devDependencies": {
-    "firebase-tools": "^3.18.1"
+    "firebase-tools": "^3.18.2"
   }
 }
