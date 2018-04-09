@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "NODE_ENV=development node build",
+    "build-prod": "NODE_ENV=production node build",
     "serve": "node_modules/.bin/firebase serve -p 9000 -o 0.0.0.0",
     "test": "echo \"Test: no test specified\" && exit 0",
     "deploy": "node_modules/.bin/firebase deploy --token $FIREBASE_TOKEN"
@@ -27,6 +29,13 @@
     "morgan": "^1.9.0"
   },
   "devDependencies": {
-    "firebase-tools": "^3.18.2"
+    "firebase-tools": "^3.18.2",
+    "jstransformer-handlebars": "^1.1.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-assets": "^0.1.0",
+    "metalsmith-layouts": "^2.1.0",
+    "metalsmith-markdown": "^0.2.2",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-sass": "^1.5.1"
   }
 }
