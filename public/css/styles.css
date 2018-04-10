@@ -1,11 +1,41 @@
 body {
-    background: #C5C5C5;
-}
-body .gang500ml {
+  background: #C5C5C5;
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
+.center-halign {
+  justify-content: center;
+}
+.center-valign {
+  vertical-align:middle;
+}
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+.avatar-sm {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.gang500ml .minilogo {
+  width: 44px;
+  height: 44px;
+  background-image: url('../images/misora-haruki.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+}
 
-.gang500ml .gang500ml__posts {
+
+.gang500ml.mdl-layout .mdl-layout__content {
+  padding-top: 30px;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+.gang500ml.mdl-grid {
   max-width: 900px;
   padding: 0;
   display: -webkit-flex;
@@ -17,12 +47,6 @@ body .gang500ml {
       -ms-flex-negative: 0;
           flex-shrink: 0;
 }
-
-.gang500ml.mdl-layout .mdl-layout__content {
-  padding-top: 30px;
-  position: relative;
-  -webkit-overflow-scrolling: touch;
-}
 .gang500ml .mdl-card {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -33,7 +57,7 @@ body .gang500ml {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  min-height: 360px;
+  /*min-height: 360px;*/
 }
 .gang500ml .mdl-card__title {
   padding: 16px;
@@ -137,12 +161,12 @@ body .gang500ml {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.gang500ml.is-small-screen .gang500ml__posts > .mdl-card.coffee-pic {
+.gang500ml.is-small-screen .gang500ml > .mdl-card.coffee-pic {
   -webkit-order: 0;
       -ms-flex-order: 0;
           order: 0;
 }
-.gang500ml.is-small-screen .gang500ml__posts > .mdl-card.something-else {
+.gang500ml.is-small-screen .gang500ml > .mdl-card.something-else {
   -webkit-order: -1;
       -ms-flex-order: -1;
           order: -1;
@@ -188,7 +212,7 @@ body .gang500ml {
 .gang500ml #sign-in-card .mdl-card__media {
   background-image: url('../images/shopping.jpg');
 }
-.gang500ml .gang500ml__posts > .demo-nav {
+.gang500ml .gang500ml > .demo-nav {
   margin: 12px 15px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -205,18 +229,18 @@ body .gang500ml {
   color: white;
   font-weight: 500;
 }
-.gang500ml .gang500ml__posts > .demo-nav > .demo-nav__button {
+.gang500ml .gang500ml > .demo-nav > .demo-nav__button {
   color: white;
   text-decoration: none;
 }
-.gang500ml .gang500ml__posts > .demo-nav .mdl-button {
+.gang500ml .gang500ml > .demo-nav .mdl-button {
   color: rgba(0,0,0,0.54);
   background-color: white;
 }
-.gang500ml .gang500ml__posts > .demo-nav > .demo-nav__button:first-child .mdl-button {
+.gang500ml .gang500ml > .demo-nav > .demo-nav__button:first-child .mdl-button {
   margin-right: 16px;
 }
-.gang500ml .gang500ml__posts > .demo-nav > .demo-nav__button:last-child .mdl-button {
+.gang500ml .gang500ml > .demo-nav > .demo-nav__button:last-child .mdl-button {
   margin-left: 16px;
 }
 .gang500ml .mdl-card > a {
@@ -244,7 +268,7 @@ body .gang500ml {
 .gang500ml--blogpost .custom-header {
   background-color: transparent;
 }
-.gang500ml--blogpost .gang500ml__posts > .mdl-card .mdl-card__media {
+.gang500ml--blogpost .gang500ml > .mdl-card .mdl-card__media {
   background-image: url('../images/road_big.jpg');
   height: 280px;
 }
@@ -386,14 +410,6 @@ body .gang500ml {
   padding-top: 32px;
   padding-left: 48px;
 }
-
-.gang500ml--blogpost .demo-back {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  color: white;
-  z-index: 9999;
-}
 .gang500ml .section-spacer {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
@@ -406,16 +422,7 @@ body .gang500ml {
 .gang500ml .amazing .mdl-card__title {
   background-color: #263238;
 }
-.gang500ml .minilogo {
-  width: 44px;
-  height: 44px;
-  background-image: url('../images/misora-haruki.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  border-radius: 50%;
-  background-color: #F5F5F5;
-}
+
 
 /* Fixes for IE 10 */
 .mdl-grid {
@@ -481,9 +488,3 @@ body .gang500ml {
 
 
 
-.avatar {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}

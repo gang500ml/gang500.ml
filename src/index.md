@@ -1,7 +1,7 @@
 ---
 layout: main.hbs
 ---
-<div class="gang500ml__posts mdl-grid">
+<div class="gang500ml mdl-grid">
   <div class="mdl-card quote-pic mdl-cell mdl-cell--12-col mdl-cell--8-col-desktop">
     <div class="mdl-card__media mdl-color-text--grey-50">
       <h3><a href="entry.html"></a></h3>
