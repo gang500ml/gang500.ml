@@ -6,7 +6,7 @@
   "scripts": {
     "build": "NODE_ENV=development node build",
     "build-prod": "NODE_ENV=production node build",
-    "serve": "node_modules/.bin/firebase serve -p 9000 -o 0.0.0.0",
+    "serve": "node_modules/.bin/firebase serve -p 9090 -o 0.0.0.0",
     "test": "echo \"Test: no test specified\" && exit 0",
     "deploy": "node_modules/.bin/firebase deploy --token $FIREBASE_TOKEN"
   },
