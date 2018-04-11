@@ -1,33 +1,14 @@
 ---
-layout: main.hbs
+layout: signin.hbs
 permalink: false
 ---
-<div class="gang500ml mdl-grid">
-
-<div class="mdl-card amazing mdl-cell mdl-cell--12-col">
-    <div class="mdl-card__title mdl-color-text--grey-50">
-    <h3 class="quote"><a href="entry.html">I couldn’t take any pictures but this was an amazing thing…</a></h3>
-    </div>
-    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-        <div>[favicon, gang's logo] made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    </div>
+<div style="text-align:center;">
+  <i class="material-icons" style="padding:4rem 0 0;font-size:48px;color:#e91e63;">&#xE90D;</i>
 </div>
-
-
-<div class="mdl-card amazing mdl-cell mdl-cell--12-col">
-    <div class="mdl-card__title mdl-color-text--grey-50">
-    <h3 class="quote"><a href="entry.html">I couldn’t take any pictures but this was an amazing thing…</a></h3>
-    </div>
-    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-        <div>favicon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    </div>
-    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-    <div class="minilogo"></div>
-    <div>
-    <strong>The Newist</strong>
-    <span>2 days ago</span>
-    </div>
-    </div>
-</div>
-
+<div id="firebaseui-auth-container" style="margin:auto;"></div>
+<div style="text-align:center;">
+  <a href="/" style="margin:1rem 0 0 -12rem;color:#e91e63;">
+  <i class="material-icons" style="font-size:36px;">&#xE408;</i>
+<!--<i class="material-icons" style="font-size:36px;">&#xE88A;</i>-->
+  </a>
 </div>
