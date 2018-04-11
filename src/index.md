@@ -1,7 +1,7 @@
 ---
 layout: main.hbs
 ---
-<div class="gang500ml mdl-grid">
+<div class="mdl-grid">
   <div class="mdl-card quote-pic mdl-cell mdl-cell--12-col mdl-cell--8-col-desktop">
     <div class="mdl-card__media mdl-color-text--grey-50">
       <h3><a href="entry.html"></a></h3>
@@ -50,7 +50,9 @@ layout: main.hbs
       </button>
     </div>
   </div>
-  <div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
+  
+  
+  <div class="mdl-card mdl-cell mdl-cell--12-col">
     <div class="mdl-card__media mdl-color-text--grey-50">
       <h3><a href="entry.html">On the road again</a></h3>
     </div>
@@ -66,7 +68,7 @@ layout: main.hbs
       </div>
     </div>
   </div>
-  <div class="mdl-card amazing mdl-cell mdl-cell--12-col">
+  <div class="mdl-card amazing mdl-cell mdl-cell--12-col ">
     <div class="mdl-card__title mdl-color-text--grey-50">
       <h3 class="quote"><a href="entry.html">I couldn’t take any pictures but this was an amazing thing…</a></h3>
     </div>
