@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="description" content="{{description}}" />
-    <meta name="keywords" content="{{keywords}}" />
-    <meta name="author" content="{{author}}" />
-    <title>{{title}}</title>
+    <meta name="description" content="Gang 500ml&#x27;s Blog" />
+    <meta name="keywords" content="gang500ml, 500ml, Gang 500ml" />
+    <meta name="author" content="https://github.com/gang500ml" />
+    <title>Gang 500ml</title>
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/4.12.1/firebase-app.js"></script>
@@ -44,13 +44,75 @@
 <script src="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.js"></script>
 <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.css" />
 
-    {{!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">--}}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    {{!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-pink.min.css" />--}}
-    {{!--<link rel="stylesheet" href="css/styles.css">--}}
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-pink.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    
+<link rel="stylesheet" href="css/fa-regular.min.css">
+<link rel="stylesheet" href="css/fa-solid.min.css">
+<link rel="stylesheet" href="css/fa-brands.min.css">
+<link rel="stylesheet" href="css/fontawesome.min.css">
+    
   </head>
-  <body style="background-color:#C5C5C5;">
-  {{{ contents }}}
+  <body>
+    <div class="gang500ml mdl-layout mdl-js-layout has-drawer is-upgraded">
+      <main class="mdl-layout__content">
+  <div class="portfolio mdl-grid">
+
+<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
+
+<div id="profile-pic">
+<div class="mdl-card__title mdl-color-text--grey-50">
+<i class="material-icons">&#xE853;</i>
+<img class="avatar" src="images/chom.jpg" />
+</div>
+</div>
+
+
+<div class="mdl-card__supporting-text meta mdl-color-text--teal">
+<div style="margin: -42px auto 0;"><h4>chompoo500ml</h4></div>
+</div>
+
+<div class="mdl-card__supporting-text">
+<div style="margin:auto;">
+<h6><i class="far fa-compass fa-2x mdl-color-text--grey-700 center-valign"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://chompoo500ml.github.io/">https://chompoo500ml.github.io</a></h6>
+<h6><i class="far fa-envelope fa-2x mdl-color-text--grey-700 center-valign"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:chompoo@gang500.ml">chompoo@gang500.ml</a></h6>
+<h6><i class="fab fa-github-alt fa-2x mdl-color-text--grey-700 center-valign"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/chompoo500ml">https://github.com/chompoo500ml</a></h6>
+</div>
+</div>
+
+<p></div></p>
+<p></div></p>
+<script>
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+      var pp = document.getElementById('profile-pic');
+      pp.innerHTML = 'xx';
+  }
+};
+</script>
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section center-halign">
+            <span><a href="/"><i class="material-icons">&#xE88A;</i><span class="visuallyhidden">Home</span></a></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span><a href="license.html"><i class="material-icons">&#xE90C;</i><span class="visuallyhidden">License</span></a></span>
+
+          </div>
+          <div class="mdl-mini-footer--right-section">
+              <a href="signin.html">
+              <i class="material-icons" style="font-size:48px;">&#xE90D;</i>
+              <span class="visuallyhidden">Sign In</span>
+              </a>
+          </div>
+        </footer>
+        
+        
+      </main>
+      <div class="mdl-layout__obfuscator"></div>
+    </div>
+    
+
 <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 <script>
   var config = {
@@ -83,28 +145,7 @@
       document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
     }
   });
-
-  var uiConfig = {
-    signInFlow: 'popup',
-    signInSuccessUrl: 'profile.html',
-    credentialHelper: firebaseui.auth.CredentialHelper.NONE,
-    signInOptions: [
-      // Leave the lines as is for the providers you want to offer your users.
-      firebase.auth.GithubAuthProvider.PROVIDER_ID,
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      //firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-      //firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-      //firebase.auth.PhoneAuthProvider.PROVIDER_ID,
-      firebase.auth.EmailAuthProvider.PROVIDER_ID
-    ],
-    // Terms of service url.
-    tosUrl: 'tos.html'
-  };
-
-  // Initialize the FirebaseUI Widget using Firebase.
-  var ui = new firebaseui.auth.AuthUI(firebase.auth());
-  // The start method will wait until the DOM is loaded.
-  ui.start('#firebaseui-auth-container', uiConfig);
 </script>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>
